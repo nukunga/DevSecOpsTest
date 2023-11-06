@@ -11,6 +11,8 @@ phases:
       - echo Buile Phase >> Build started on `date`
       - npm i -g @quasar/cli
       - npm install
+      - pwd
+      - ls -al
       - quasar build
   post_build:
     commands:
