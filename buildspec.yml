@@ -15,6 +15,7 @@ phases:
 artifacts:
   files:
     - dist/**/*
+    - package.json
 
 post_build:
     commands:
@@ -23,4 +24,3 @@ post_build:
 cache:
   paths:
     - node_modules/
-    
