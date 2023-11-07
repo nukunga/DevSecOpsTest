@@ -19,8 +19,7 @@ artifacts:
 post_build:
     commands:
       - echo Build completed on `date`
-      - echo Delete all resources in this bucket
-      - aws s3 rm s3://${S3_BUCKET} --recursive
+  
 
 cache:
   paths:
