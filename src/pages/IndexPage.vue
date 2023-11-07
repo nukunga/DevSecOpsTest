@@ -5,7 +5,7 @@
       src="~assets/quasar-logo-vertical.svg"
       style="width: 200px; height: 200px"
     >
-    <h1>this is test page</h1>
+    <h1>Code Change</h1>
   </q-page>
 </template>
 
