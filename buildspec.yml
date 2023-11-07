@@ -1,22 +1,21 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
-      nodejs: 12
+      nodejs: 14
+    commands:
+      - npm install -g @quasar/cli
+      - npm install
+
   pre_build:
     commands:
-      - echo Buile Phase >> pre_build phase...
-  build:
-    commands:
-      - echo Buile Phase >> Build started on `date`
-      - npm i -g @quasar/cli
-      - npm install
-      - pwd
-      - ls -al
       - quasar build
-  post_build:
-    commands:
-      - echo Buile Phase >> Build completed on `date`
+
 artifacts:
   files:
     - dist/**/*
+
+cache:
+  paths:
+    - node_modules/
